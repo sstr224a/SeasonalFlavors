@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.container {
+ position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+}
+
+.container img { 
+position : absolute;
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+  background-size: cover;
+transition: 0s linear;
+transition-property: background-position;
+}
+
+.container .content {
+  //position: absolute;
+  //bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="/images/testimgbg.jpg" style="width:100%;">
+  <div class="content">
+    <h1>THE KEYS TO A PERFECT VEGAN SNACK BOARD:</h1>
+    <p>Lots of options! The reason veggies and hummus can seem boring is because it’s only veggies and hummus. Have lots of variety of dips, vegan cheeses, crackers, veggies, fruit, nuts, and dried fruit. The more variation, the more fun the board will be.
+Lots of colour. When selecting the options, make sure to select a variety of colour. Everything in the beige family won’t be very attractive. Plants are BEAUTIFUL, so make sure to showcase that. Get an array of fruit and veg so your board is bursting with colour.
+Salty and Sweet. The vegan snack board has lots of salty and savoury flavours, but adding a few sweet surprises will take your taste buds for a ride. Add things like red pepper jelly, candied ginger, and dried apricots. These can be enjoyed separately, but one of my favourite combos is cashew ricotta topped with red pepper jelly. Yum!</p>
+  </div>
+</div>
+
+</body>
+</html>

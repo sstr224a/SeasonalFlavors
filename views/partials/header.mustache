@@ -1,0 +1,148 @@
+<header>
+    <!-- Header desktop -->
+    <div id="wrap_header" >
+        <!-- Logo -->
+        <div class="logo col_header">
+            <a href="index"><img alt="logo-deli" src="images/icons/dish1.png"></a>
+        </div>
+        <!-- Menu -->
+        <div class="main_nav">
+            <nav class="menu col_header">
+                <ul class="main_menu">
+                    <li><a href="index">Home</a>
+                        <ul class="sub_menu">
+                            <li><a href="index">Homepage</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="menu-01">Menus</a>
+                        <ul class="sub_menu">
+                            <li><a href="menu-01">Menu 01</a></li>
+                            <li><a href="menu-02">Menu 02</a></li>
+                            <li><a href="menu-03">Menu 03</a></li>
+                            <li><a href="product-detail">Product Detail</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="reservation-01" class="have_sub_menu">Reservation</a>
+                        <ul class="sub_menu">
+                            <li><a href="reservation-02">Reservation V2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about-us">About us</a></li>
+                    <li><a href="shop-page">Features</a>
+                        <ul class="sub_menu">
+                            <li><a href="shop-page">Shop Page</a></li>
+                            <li><a href="shopping-cart">Shopping Cart</a></li>
+                            <li><a href="check-out">Check Out</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="blog-list-with-sidebar-01">Blog</a>
+                        <ul class="sub_menu">
+                            <li><a href="blog-list-with-sidebar-01">Blog With Sidebar V1</a></li>
+                            <li><a href="blog-list-with-sidebar-02">Blog With Sidebar V2</a></li>
+                            <li><a href="blog-mansory">Blog Mansory</a></li>
+                            <li><a href="blog-detail">Blog Detail</a></li>
+                        </ul>
+                    </li>
+                    {{#user}}
+                                        <li><a href="logout" style="align-items: flex-end">Logout</a></li>
+                     {{/user}}
+                    <li><a href="contact">Contact</a></li>
+                    {{^user}}
+                    <li><a href="userlogin" style="align-items: flex-end">Login</a></li>
+                    {{/user}}
+                    {{^user}}
+                     <li><a href="SignUp" style="align-items: flex-end">SignUp</a></li>
+                    {{/user}}
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Socials -->
+        <div class="icon-header col_header">
+				<a href="https://www.facebook.com/seasonal.flavors.39?login=sahana.sreenath18@gmail.com&password=Sana@12345"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				<a href="https://twitter.com/SeasonalFlavou1?login=kprarthana04@gmail.com&password=SurveyProject22!"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				<a href="https://www.tripadvisor.com/Profile/Getaway39190902898?login=prarthanagk@gmail.com&password=SurveyProject22!"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+				<a href="https://www.instagram.com/seasonal6679?login=kprarthana04@gmail.com&password=SurveyProject22!"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+			</div>
+    </div>
+
+    <!-- Header Mobile -->
+    <div id="wrap_header_mobile">
+
+        <!-- Logo moblie -->
+        <div class="logo-mobile">
+            <a href="index.mustache"><img alt="logo-deli" src="images/icons/logo-mobile.png"></a>
+        </div>
+
+        <!-- Button show menu -->
+        <div class="btn-show-menu">
+            <button class="btn-show-menu-mobile hamburger hamburger--squeeze" type="button">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Menu Mobile -->
+    <div class="wrap-side-menu" >
+        <nav class="side-menu">
+            <ul class="main-menu">
+                <li>
+                    <a href="index">Home</a>
+                    <i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
+                    <ul class="sub-menu">
+                        <li><a href="index">Homepage</a></li>
+                        <li><a href="home-boxed">Homepage Boxed</a></li>
+                        <li><a href="home-outgrid">Homepage Outgrid</a></li>
+                        <li><a href="home-showcase">Homepage Showcase</a></li>
+                        <li><a href="home-vertical-menu">Home Vertical Menu</a></li>
+                        <li><a href="home-onepage">Homepage Onepage</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="menu-01">Menus</a>
+                    <i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
+                    <ul class="sub-menu">
+                        <li><a href="menu-01">Menu 01</a></li>
+                        <li><a href="menu-02">Menu 02</a></li>
+                        <li><a href="menu-03">Menu 03</a></li>
+                        <li><a href="product-detail">Product Detail</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="reservation-01">Reservation</a>
+                    <i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
+                    <ul class="sub-menu">
+                        <li><a href="reservation-02">Reservation V2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="about-us">About us</a>
+                </li>
+                <li>
+                    <a href="shop-page">Features</a>
+                    <i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
+                    <ul class="sub-menu">
+                        <li><a href="shop-page">Shop Page</a></li>
+                        <li><a href="shopping-cart">Shopping Cart</a></li>
+                        <li><a href="check-out">Check Out</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="blog-list-with-sidebar-01.mustache">Blog</a>
+                    <i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
+                    <ul class="sub-menu">
+                        <li><a href="blog-list-with-sidebar-01">Blog With Sidebar V1</a></li>
+                        <li><a href="blog-list-with-sidebar-02">Blog With Sidebar V2</a></li>
+                        <li><a href="blog-mansory">Blog Mansory</a></li>
+                        <li><a href="blog-detail">Blog Detail</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="contact-us.mustache">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>

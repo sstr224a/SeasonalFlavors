@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--Basic Page Needs-->
+	<title>Blog Details</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="AuCreative theme tempalte">
+	<meta name="author" content="AuCreative">
+	<meta name="keywords" content="AuCreative theme template">
+	<!--Mobile Specific Metas-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" type="image/png" href="images/icons/dish.png"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker-bootstrap/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/jqueryui/jquery-ui.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/dist/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+<div class="animsition">	
+	<header>
+		<!-- Header desktop -->
+		<div id="wrap_header" >
+			<!-- Logo -->		
+			<div class="logo col_header">
+				<a href="index.mustache"><img alt="logo-deli" src="images/icons/dish.png"></a>
+			</div>
+			<!-- Menu -->
+			<div class="main_nav">
+				<nav class="menu col_header">
+					<ul class="main_menu">
+						<li><a href="index.mustache">Home</a>
+							<ul class="sub_menu">
+								<li><a href="index.mustache">Homepage</a></li>
+								<li><a href="home-boxed.mustache">Homepage Boxed</a></li>
+								<li><a href="home-outgrid.mustache">Homepage Outgrid</a></li>
+								<li><a href="home-showcase.mustache">Homepage Showcase</a></li>
+								<li><a href="home-vertical-menu.mustache">Home Vertical Menu</a></li>
+								<li><a href="home-onepage.mustache">Homepage Onepage</a></li>
+							</ul>
+						</li>
+						<li><a href="menu-01.mustache">Menus</a>
+							<ul class="sub_menu">
+								<li><a href="menu-01.mustache">Menu 01</a></li>
+								<li><a href="menu-02.mustache">Menu 02</a></li>
+								<li><a href="menu-03.mustache">Menu 03</a></li>
+								<li><a href="product-detail.mustache">Product Detail</a></li>
+							</ul>
+						</li>
+						<li><a href="reservation-01.mustache" class="have_sub_menu">Reservation</a>
+							<ul class="sub_menu">
+								<li><a href="reservation-01.mustache">Reservation V1</a></li>
+								<li><a href="reservation-02.mustache">Reservation V2</a></li>
+								<li><a href="reservation-03.mustache">Reservation V3</a></li>
+							</ul>
+						</li>
+						<li><a href="about-us.mustache">About us</a></li>
+						<li><a href="shop-page.mustache">Features</a>
+							<ul class="sub_menu">
+								<li><a href="shop-page.mustache">Shop Page</a></li>
+								<li><a href="shopping-cart.mustache">Shopping Cart</a></li>
+								<li><a href="check-out.mustache">Check Out</a></li>
+							</ul>
+						</li>
+						<li><a href="blog-list-with-sidebar-01.mustache">Blog</a>
+							<ul class="sub_menu">
+								<li><a href="blog-list-with-sidebar-01.mustache">Blog With Sidebar V1</a></li>
+								<li><a href="blog-list-with-sidebar-02.mustache">Blog With Sidebar V2</a></li>
+								<li><a href="blog-mansory.mustache">Blog Mansory</a></li>
+								<li><a href="blog-detail">Blog Detail</a></li>
+							</ul>
+						</li>
+						<li><a href="contact-us.mustache">Contact</a></li>
+                         <li><a href="userlogin" style="align-items: flex-end">Login</a></li>
+                     <li><a href="SignUp" style="align-items: flex-end">SignUp</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<!-- Socials -->
+			<div class="icon-header col_header">
+				<a href="https://www.facebook.com/seasonal.flavors.39?login=sahana.sreenath18@gmail.com&password=Sana@12345"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				<a href="https://twitter.com/SeasonalFlavou1?login=kprarthana04@gmail.com&password=SurveyProject22!"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				<a href="https://www.tripadvisor.com/Profile/Getaway39190902898?login=prarthanagk@gmail.com&password=SurveyProject22!"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+				<a href="https://www.instagram.com/seasonal6679?login=kprarthana04@gmail.com&password=SurveyProject22!"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+			</div>
+		</div>
+
+		<!-- Header Mobile -->
+		<div id="wrap_header_mobile">
+		
+			<!-- Logo moblie -->		
+			<div class="logo-mobile">
+				<a href="index.mustache"><img alt="logo-deli" src="images/icons/logo-mobile.png"></a>
+			</div>
+
+			<!-- Button show menu -->
+			<div class="btn-show-menu">
+				<button class="btn-show-menu-mobile hamburger hamburger--squeeze" type="button">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</button>
+			</div>	
+		</div>
+
+		<!-- Menu Mobile -->
+		<div class="wrap-side-menu" >
+			<nav class="side-menu">
+				<ul class="main-menu">
+					<li>
+						<a href="index.mustache">Home</a>
+						<i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
+						<ul class="sub-menu">
+							<li><a href="index.mustache">Homepage</a></li>
+							<li><a href="home-boxed.mustache">Homepage Boxed</a></li>
+							<li><a href="home-outgrid.mustache">Homepage Outgrid</a></li>
+							<li><a href="home-showcase.mustache">Homepage Showcase</a></li>
+							<li><a href="home-vertical-menu.mustache">Home Vertical Menu</a></li>
+							<li><a href="home-onepage.mustache">Homepage Onepage</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="menu-01.mustache">Menus</a>
+						<i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
+						<ul class="sub-menu">
+							<li><a href="menu-01.mustache">Menu 01</a></li>
+							<li><a href="menu-02.mustache">Menu 02</a></li>
+							<li><a href="menu-03.mustache">Menu 03</a></li>
+							<li><a href="product-detail.mustache">Product Detail</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="reservation-01.mustache">Reservation</a>
+						<i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
+						<ul class="sub-menu">
+							<li><a href="reservation-01.mustache">Reservation V1</a></li>
+							<li><a href="reservation-02.mustache">Reservation V2</a></li>
+							<li><a href="reservation-03.mustache">Reservation V3</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="about-us.mustache">About us</a>
+					</li>
+					<li>
+						<a href="shop-page.mustache">Features</a>
+						<i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
+						<ul class="sub-menu">
+							<li><a href="shop-page.mustache">Shop Page</a></li>
+							<li><a href="shopping-cart.mustache">Shopping Cart</a></li>
+							<li><a href="check-out.mustache">Check Out</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="blog-list-with-sidebar-01.mustache">Blog</a>
+						<i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
+						<ul class="sub-menu">
+							<li><a href="blog-list-with-sidebar-01.mustache">Blog With Sidebar V1</a></li>
+							<li><a href="blog-list-with-sidebar-02.mustache">Blog With Sidebar V2</a></li>
+							<li><a href="blog-mansory.mustache">Blog Mansory</a></li>
+							<li><a href="blog-detail.mustache">Blog Detail</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="contact-us.mustache">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!-- Title page -->
+	<section>
+		<div class="bg-title-sub-page bg-menu-page-02 ">
+			<div class="wrap-title-sub-page">
+				<h2 class="title-l">Blog Details</h2>
+				<h6 class="title-s">Home / Blog Details</h6>
+			</div>
+		</div>
+	</section>
+
+	<section class="content-blog-detail extend content-blog-list-sidebar-page extend content-shop-page for-v2">
+		<div class="container">
+			<div class="row">
+				<!-- content -->
+				<div class="col-res-content-blog col-md-10 col-lg-9">
+					<div class="wrap-content-blog row">
+						<div class="col-12">
+							<!-- main post -->
+							<div class="post-blog-detail extend main-post col-style-content-blog right">
+								<div>
+									<img src="images/blog-list-01-img-01.jpg" alt="img-blog">
+								</div>
+
+								<h3 class="medium-text-2">Dinnertime Done Right: Coconut-Crusted Cauliflower Tacos</h3>
+								<span class="post-info date-post">Date: July 04, 2017</span>
+								<span class="post-info post-by">Posted by Maria Carroll</span>
+
+								<p class="first-para">
+									Are you ready for some crispy, flavour-packed cauliflower tacos? We are, so we’re serving up this incredibly bright and delicious recipe to satisfy your taco needs. When the weather is warm, most people tend to crave zesty, fresh and light flavours and this vegetarian dish delivers just that. Make it for dinner this week — you (and your belly) will be very pleased.
+								</p>
+
+								<p>
+									Cauliflower Tacos – The crispiest cauliflower you’ve ever had…and it’s BAKED! Crispy, crunchy, creamy – you can have it all with these Crispy Coconut Lime Baked Cauliflower Tacos!I have to admit I haven’t been this excited about a recipe in a long time! These seriously turned out better than I could have ever imagined and now I can’t stop eating them. They are the perfect light summer meal!Easy with super fresh flavors, this recipe hits on all the best textures – crispy, crunchy and creamy. You have to try these Crispy Coconut Lime Baked Cauliflower Tacos!The crispy cauliflower, the crunchy coleslaw, the creamy tartar sauce – it all works so perfectly together to create one delicious bite!
+								</p>
+
+								<h4 class="title-h4-blog-detail">We had never had cauliflower, you cant even realize its a veggie!</h4>
+
+								<ul class="list-blog-detail">
+									<li class="small-text">
+										I was skeptical about it, but once i started reading about it, i really wanted to try it.
+									</li>
+									<li class="small-text">
+										It was good even with other vegetables as a substitute, I tried it with cabbage and it tastes the same
+									</li>
+									<li class="small-text">
+										Follow the link, with a full recipe <href = "https://minimalistbaker.com/roasted-cauliflower-tacos-with-chipotle-romesco/" > 
+									</li>
+									<li class="small-text">
+										Does anybody has any other option to replace the taco shells? Unable to make it at home! :(
+									</li>
+									<li class="small-text">
+										Home made, and tastes way better than any other taco places near by.. Never believed that it was so simple to make and sooooooooo tastie.
+									</li>
+								</ul>
+								
+								<p>
+									Taco Tuesday is pretty much a weekly holiday in our house. Ryan lived in Los Angeles for several years and considers himself a taco aficionado (I concur that he totally is!). He is verrrryyy picky about his tacos and always knows the best spots for every kind.
+
+                                    One evening when my mom was visiting about a year or so ago, we were supposed to go out to dinner and decided to stay home at the last minute. We always have tortillas in our fridge and whenever I don't know what I am going to cook for dinner, I make tacos. You can put just about anything in a tortilla and it will taste good. Sautéed veggies, eggs, even last night's leftovers. That evening, I had a head of cauliflower in my produce drawer, so I thought, why not? Cauliflower is perfect for tacos because when finely chopped, it mimics the texture of ground beef. I sautéed it with chili powder, garlic, added some salsa, and poof! it was just like the taco kits I used to love as a kid. Ryan made sriracha black beans, we wrapped them in almond flour tortillas, and a new favorite healthy meal was created.
+								</p>
+
+								<h4 class="title-h4-blog-detai">In hac habitasse platea dictumst, placerat a leove. </h4>
+
+								<span class="style-share ">
+									<a href="#" class="content-tag small-text">Apples</a>
+									<a href="#" class="content-tag small-text">Organic juices</a>
+									<a href="#" class="content-tag small-text">Restaurants</a>
+								</span>
+							
+								<span class="style-share share-blog-detail extend follow-us small-text ">SHARE: 
+									<a href="#" class="small-text"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+									<a href="#" class="small-text"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+									<a href="#" class="small-text"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+									<a href="#" class="small-text"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+								</span>
+							</div>
+							
+							<!-- comment -->
+							<div class="comment-blog-detail col-style-content-blog right">
+								<h4 class="title-comment">1 Comment</h4>
+
+								<div class="wrap-comment  parent-comment">
+									<a href="#" class="img-author-comment"><img src="images/blog-detail-img-comment-01.jpg" alt="img-author"></a>
+
+									<div class="text-comment">
+										<a href="https://youtu.be/GsNIIu5GVIg" class="name-author-comment">Thomas Wagner</a>
+
+										<p>
+                                        DIRECTIONS:
+For the cauliflower: In a large skillet, heat the olive oil over medium-high heat. Add the cauliflower and cook until it begins to soften, 3 to 4 minutes. Add the chili powder, garlic salt and oregano. Cook another 2 minutes, stirring frequently. Stir in the salsa and 1/4 cup water. Bring to a simmer and reduce the heat to low. Cook until the liquid has been mostly absorbed by the cauliflower, about 5 minutes.
+
+For the black beans: In a small skillet, heat the olive oil over medium heat. Add the onions and saute until tender and translucent, 6 to 7 minutes. Add the black beans with their liquid and the sriracha. Bring to a simmer and reduce the heat to low. Simmer on low for about 10 minutes. Use a wooden spoon to gently mash the beans, leaving some texture.
+
+For the tacos: Build the tacos with the tortillas, black beans, cauliflower and desired toppings. 
+
+											INGREDIENTS
+Cauliflower:
+
+1 tablespoon olive oil
+
+1 small head cauliflower, finely chopped
+
+1 tablespoon chili powder
+
+1/2 teaspoon garlic salt
+
+1/2 teaspoon dried oregano
+
+1/2 cup salsa
+
+Black Beans:
+
+1 tablespoon olive oil
+
+1/2 medium yellow onion, diced
+
+One 15-ounce can black beans (do not drain)
+
+1 to 2 teaspoons sriracha hot sauce
+
+Kosher salt and freshly cracked black pepper
+
+
+										</p>
+
+										<p>
+											<span class="comment-info date-comment">May 23, 2017 at 5:10 pm</span>
+                                            <div class="col-12">
+												<textarea class="small-text" id="msg" name="msg" placeholder="Your message"></textarea>
+											</div>
+											<a href="reply.mustache" class="comment-info reply-comment"><i class="fa fa-reply" aria-hidden="true"></i> REPLY</a>
+										</p>
+									</div>
+								</div>
+
+								<div class= "wrap-comment child-comment">
+									<a href="#" class="img-author-comment"><img src="images/blog-detail-img-comment-02.jpg" alt="img-author"></a>
+
+									<div class="text-comment">
+										<a href="reply.mustache" class="name-author-comment">Rachel William</a>
+
+										<p>
+											It was a great recipe! Thanks Thomas it tastes amazing, and my family loved it :) thanks for sharing. Great I found this blog.
+										</p>
+
+										<p>
+											<span class="comment-info date-comment">May 23, 2017 at 5:10 pm</span>
+                                            <div class="col-12">
+												<textarea class="small-text" id="msg" name="msg" placeholder="Your message"></textarea>
+											</div>
+											<a href="reply.mustache" class="comment-info reply-comment"><i class="fa fa-reply" aria-hidden="true"></i> REPLY</a>
+										</p>
+									</div>
+								</div>
+							</div>
+							
+							<!-- leave mes -->
+							<div class="wrap-leave-mes col-style-content-blog right">
+								<h4 class="title-comment">Leave a Reply</h4>
+								<p>
+									Your email address will not be published. Required fields are marked *
+								</p>
+								
+								<form>
+									<div class="content-contact-us row" method="post" action="/submit-form" name="contact" id="contact-form">
+											<div class="col-left col-12 col-sm-6">
+												<input class="small-text" type="text" id="name" name="name" placeholder="Your name">
+											</div>
+											<div class="col-right col-12 col-sm-6">
+												<input class="small-text" type="text" id="email" name="email" placeholder="Your mail">
+											</div>
+											<div class="col-12">
+												<textarea class="small-text" id="msg" name="msg" placeholder="Your message"></textarea>
+											</div>
+											<div class="responsive col-12">
+												<button class="btn-with-bg for-blog-detail" type="submit" onclick= "myfunction()">SUBMIT</button>
+											</div>
+									</div>
+								</form>	
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- sidebar -->
+				<div class="col-res-content-blog col-md-10 col-lg-3">
+					<div class="wrap-side-bar row">
+						<div class="wrap-search-box col-12">
+							<div class="search-box">
+                        		<input class="search small-text" type="search" placeholder="Search...">
+                        		<i class="btn-search fa fa-search" aria-hidden="true"></i>
+                        	</div>
+						</div>
+
+						<div class="categories col-12">
+							<h4 class="medium-text-2 ">Categories</h4>
+						</div>
+						<div class="categories-content col-12">
+							<ul>
+								<li class="small-text clearfix">
+									<a href="#" class="small-text">Vegan Food</a> 
+									<span>(10)</span>
+								</li>
+								<li class="small-text clearfix">
+									<a href="#" class="small-text">America Restaurants</a> 
+									<span>(25)</span>
+								</li>
+								<li class="small-text clearfix">
+									<a href="#" class="small-text">Healthy Diet</a> 
+									<span>(15)</span>
+								</li>
+								<li class="small-text clearfix">
+									<a href="#" class="small-text">Salad Recipes</a> 
+									<span>(10)</span>
+								</li>
+								<li class="small-text clearfix">
+									<a href="#" class="small-text">Food Tips</a> 
+									<span>(25)</span>
+								</li>
+								<li class="small-text clearfix">
+									<a href="#" class="small-text">Fresh Products</a> 
+									<span>(15)</span>
+								</li>
+								<li class="small-text clearfix">
+									<a href="#" class="small-text">Vegan Food</a> 
+									<span>(10)</span>
+								</li>
+							</ul>
+						</div>
+
+						<div class="filter-price col-12">
+							<h4 class="medium-text-2 ">Tags</h4>
+						</div>
+
+						<div class="wrap-content-tag col-12">
+							<a href="#" class="content-tag small-text">Apples</a>
+							<a href="#" class="content-tag small-text">Organic juices</a>
+							<a href="#" class="content-tag small-text">Restaurants</a>
+							<a href="#" class="content-tag small-text">Spinach</a>
+							<a href="#" class="content-tag small-text">Banana</a>
+							<a href="#" class="content-tag small-text">Healthier living</a>
+							<a href="#" class="content-tag small-text">Ingredients</a>
+							<a href="#" class="content-tag small-text">Fresh vegetables</a>
+						</div>
+
+						<div class="wrap-your-ads col-sm-8 col-md-6 col-lg-12">
+							<a href="#"><div class="your-ads">
+								<img src="images/blog-list-01-img-ads.jpg" alt="img-ads">
+								<div class="text-your-ads">
+									<h6 class="medium-text-2">Your Ad is put here</h6>
+									<p>Please contact us if you need your ads to be published at our website </p>
+								</div>
+							</div></a>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="content-footer row">
+				<div class="column-footer col-lg-5 col-md-8 col-sm-7">
+					<h3>Contact information</h3>
+					<ul>
+						<li>ADDRESS: 100 Tenth Avenue, New York City, NY 1001</li>
+						<li>FOR BOOKING: (044) 359 0173</li>
+						<li id="follow-us">FOLLOW US ON: 
+							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="column-footer col-lg-4 col-md-5 col-sm-7">
+					<h3>Restaurant hours</h3>
+					<ul id="restaurant-hours">
+						<li>
+							<span class="span-left">LUNCH:</span>
+						</li>
+						<li>
+							<span class="span-left">Monday - Friday</span>
+							<span class="span-right">11:30AM - 2:00PM</span>
+						</li>
+						<li>
+							<span class="span-left">DINNER:</span>
+						</li>
+						<li>
+							<span class="span-left">Monday - Friday</span>
+							<span class="span-right">5:30PM - 11:00PM</span>
+						</li>
+						<li>
+							<span class="span-left">Saturday - Sunday</span>
+							<span class="span-right">4:30PM - 10:00PM</span>
+						</li>
+					</ul>
+					<div class="line-divide first-line"></div>
+				</div>
+
+				<div class="column-footer col-lg-3 col-md-3 col-sm-7">
+					<h3>Useful links</h3>
+					<ul id="useful-links">
+						<li>
+							<span class="span-left">
+								<a href="index.mustache">Home</a>
+							</span> 
+							<span class="span-right">
+								<a href="shop-page.mustache">Features</a>
+							</span>
+						</li>
+						<li>
+							<span class="span-left">
+								<a href="menu-01.mustache">Menus</a>
+							</span> 
+							<span class="span-right">
+								<a href="blog-list-with-sidebar-01.mustache">Blog</a>
+							</span>
+						</li>
+						<li>
+							<span class="span-left">
+								<a href="reservation-01.mustache">Reservation</a>
+							</span> 
+							<span class="span-right">
+								<a href="contact-us.mustache">Contact us</a>
+							</span>
+						</li>
+						<li><a href="about-us.mustache">About us</a></li>
+					</ul>
+					<div class="line-divide second-line"></div>
+				</div>
+			</div>
+		</div>
+		<div class="wrap-bottom-footer">
+			<div class="container">
+				<div class="bottom-footer row justify-content-between">
+					<div class="col-12 col-sm-7">© 2017 DesignGalaxy8. All rights reserved.</div>
+					<div class="col-12 col-sm-5"><span>Privacy policy</span><span>Terms of use</span></div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Back to top -->
+	<div class="btn-back-to-top" id="myBtn">
+		<span class="symbol-btn-back-to-top">
+			<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+		</span>
+	</div>
+
+	
+<!--===============================================================================================-->	
+	<script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/animsition/dist/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/jqueryui/jquery-ui.min.js"></script>
+    
+    <script>
+      function myfunction(){
+        alert("Success");
+        window.location = '/';
+      }
+    
+    </script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/bootstrap/js/popper.min.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->	
+	<script type="text/javascript" src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/daterangepicker-bootstrap/moment.min.js"></script>
+	<script type="text/javascript" src="vendor/daterangepicker-bootstrap/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/bootstrap-notify/bootstrap-notify.js"></script>
+	<script type="text/javascript" src="js/bootstrap-notify-custom.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+</div>
+</body>
+</html>

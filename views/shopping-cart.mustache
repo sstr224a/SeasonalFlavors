@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--Basic Page Needs-->
+	<title>Shopping Cart</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="AuCreative theme tempalte">
+	<meta name="author" content="AuCreative">
+	<meta name="keywords" content="AuCreative theme template">
+	<!--Mobile Specific Metas-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" type="image/png" href="images/icons/dish.png"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker-bootstrap/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/jqueryui/jquery-ui.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/dist/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+<div class="animsition">	
+	<header>
+		<!-- Header desktop -->
+		<div id="wrap_header" >
+			<!-- Logo -->		
+			<div class="logo col_header">
+				<a href="index.mustache"><img alt="logo-deli" src="images/icons/dish.png"></a>
+			</div>
+			<!-- Menu -->
+			<div class="main_nav">
+				<nav class="menu col_header">
+					<ul class="main_menu">
+						<li><a href="index.mustache">Home</a>
+							<ul class="sub_menu">
+								<li><a href="index.mustache">Homepage</a></li>
+							</ul>
+						</li>
+						<li><a href="menu-01.mustache">Menus</a>
+							<ul class="sub_menu">
+								<li><a href="menu-01.mustache">Menu 01</a></li>
+								<li><a href="menu-02.mustache">Menu 02</a></li>
+								<li><a href="menu-03.mustache">Menu 03</a></li>
+								<li><a href="product-detail.mustache">Product Detail</a></li>
+							</ul>
+						</li>
+						<li><a href="reservation-01.mustache" class="have_sub_menu">Reservation</a>
+							<ul class="sub_menu">
+								<li><a href="reservation-02.mustache">Reservation V2</a></li>
+							</ul>
+						</li>
+						<li><a href="about-us.mustache">About us</a></li>
+						<li><a href="shop-page.mustache">Features</a>
+							<ul class="sub_menu">
+								<li><a href="shop-page.mustache">Shop Page</a></li>
+								<li><a href="shopping-cart.mustache">Shopping Cart</a></li>
+								<li><a href="check-out.mustache">Check Out</a></li>
+							</ul>
+						</li>
+						<li><a href="blog-list-with-sidebar-01.mustache">Blog</a>
+							<ul class="sub_menu">
+								<li><a href="blog-list-with-sidebar-01.mustache">Blog With Sidebar V1</a></li>
+								<li><a href="blog-list-with-sidebar-02.mustache">Blog With Sidebar V2</a></li>
+								<li><a href="blog-mansory.mustache">Blog Mansory</a></li>
+								<li><a href="blog-detail.mustache">Blog Detail</a></li>
+							</ul>
+						</li>
+						<li><a href="contact-us.mustache">Contact</a></li>
+                         <li><a href="userlogin" style="align-items: flex-end">Login</a></li>
+                     <li><a href="SignUp" style="align-items: flex-end">SignUp</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<!-- Socials -->
+		<div class="icon-header col_header">
+				<a href="https://www.facebook.com/seasonal.flavors.39?login=sahana.sreenath18@gmail.com&password=Sana@12345"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				<a href="https://twitter.com/SeasonalFlavou1?login=kprarthana04@gmail.com&password=SurveyProject22!"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				<a href="https://www.tripadvisor.com/Profile/Getaway39190902898?login=prarthanagk@gmail.com&password=SurveyProject22!"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+				<a href="https://www.instagram.com/seasonal6679?login=kprarthana04@gmail.com&password=SurveyProject22!"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+			</div>
+		</div>
+
+		<!-- Header Mobile -->
+		<div id="wrap_header_mobile">
+		
+			<!-- Logo moblie -->		
+			<div class="logo-mobile">
+				<a href="index.mustache"><img alt="logo-deli" src="images/icons/logo-mobile.png"></a>
+			</div>
+
+			<!-- Button show menu -->
+			<div class="btn-show-menu">
+				<button class="btn-show-menu-mobile hamburger hamburger--squeeze" type="button">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</button>
+			</div>	
+		</div>
+
+		<!-- Menu Mobile -->
+		<div class="wrap-side-menu" >
+			<nav class="side-menu">
+				<ul class="main-menu">
+					<li>
+						<a href="index.mustache">Home</a>
+						<i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
+						<ul class="sub-menu">
+							<li><a href="index.mustache">Homepage</a></li>
+							<li><a href="home-boxed.mustache">Homepage Boxed</a></li>
+							<li><a href="home-outgrid.mustache">Homepage Outgrid</a></li>
+							<li><a href="home-showcase.mustache">Homepage Showcase</a></li>
+							<li><a href="home-vertical-menu.mustache">Home Vertical Menu</a></li>
+							<li><a href="home-onepage.mustache">Homepage Onepage</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="menu-01.mustache">Menus</a>
+						<i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
+						<ul class="sub-menu">
+							<li><a href="menu-01.mustache">Menu 01</a></li>
+							<li><a href="menu-02.mustache">Menu 02</a></li>
+							<li><a href="menu-03.mustache">Menu 03</a></li>
+							<li><a href="product-detail.mustache">Product Detail</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="reservation-01.mustache">Reservation</a>
+						<i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
+						<ul class="sub-menu">
+							<li><a href="reservation-01.mustache">Reservation V1</a></li>
+							<li><a href="reservation-02.mustache">Reservation V2</a></li>
+							<li><a href="reservation-03.mustache">Reservation V3</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="about-us.mustache">About us</a>
+					</li>
+					<li>
+						<a href="shop-page.mustache">Features</a>
+						<i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
+						<ul class="sub-menu">
+							<li><a href="shop-page.mustache">Shop Page</a></li>
+							<li><a href="shopping-cart.mustache">Shopping Cart</a></li>
+							<li><a href="check-out.mustache">Check Out</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="blog-list-with-sidebar-01.mustache">Blog</a>
+						<i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
+						<ul class="sub-menu">
+							<li><a href="blog-list-with-sidebar-01.mustache">Blog With Sidebar V1</a></li>
+							<li><a href="blog-list-with-sidebar-02.mustache">Blog With Sidebar V2</a></li>
+							<li><a href="blog-mansory.mustache">Blog Mansory</a></li>
+							<li><a href="blog-detail.mustache">Blog Detail</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="contact-us.mustache">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!-- Title page -->
+  
+	<section>
+		<div class="bg-title-sub-page bg-menu-page-02 ">
+			<div class="wrap-title-sub-page">
+				<h2 class="title-l">Shopping Cart</h2>
+				<h6 class="title-s">Home / Shopping Cart</h6>
+			</div>
+		</div>
+	</section>
+
+{{#valid}}
+    <div class="alert alert-success alert-dismissible">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Success!</strong> Coupon Applied.
+    <strong>Estimate Delivery To Your Location </strong>May 25th 2020
+    </div>
+{{/valid}}
+    
+{{#invalid}}
+    <div class="alert alert-danger alert-dismissible">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Invalid!</strong>Coupon Code.
+    </div>
+{{/invalid}}
+    
+  
+       
+<form class="shop-form" method="post" action="/shop-form" name="shop-from" id="shop-form">
+	<section class="content-shopping-cart-page">
+		<div class="container">
+				<div class="wrap-table-shopping-cart">
+					<table class="table-shopping-cart">
+						<tr class="table_head">
+							<th class="column-1">Product</th>
+							<th class="column-2">Name & Description</th>
+							<th class="column-3">Price</th>
+							<th class="column-4">Quantity</th>
+							<th class="column-5">Total</th>
+							<th class="column-6"></th>
+						</tr>
+                     
+                         {{#user.items}}
+ 						<tr>
+      							<td class="column-1">
+ 								<div class="img-product">
+									<img src="images/shopping-cart-img-product-in-table-01.jpg" alt="img-product">
+								</div>
+  							</td>
+							<td class="column-2" name="one" type="text" id="item" value={{0}}>{{0}}</td>
+							<td class="column-3" name="two" type="text" id="price">{{1}}</td>
+							<td class="column-4">
+								<input class="input-num-product small-text" type="text" name="num-product" id="quantity" value = {{2}}>
+							</td>
+ 							<td class="column-5" type="text" id="something">{{3}} </td> 
+ 							<td class="column-6">
+								<i class="btn-remove-product fa fa-times" aria-hidden="true"></i>
+ 							</td>
+   						</tr>
+                        {{/user.items}}      
+ 					</table>
+				</div>
+                
+                
+              <section>  
+                <form class="coupon-form" method="post" action="/coupon-form" name="coupon-from" id="coupon-form">
+				<div class="wrap-coupon">
+					<div class="row">
+						<div class="wrap-title-coupon col-responsive-shopping-cart col-md-10 col-lg-10">
+							<h4 class="title-coupon">Coupon Code</h4>
+						</div>
+
+						<div class="wrap-input-coupon col-responsive-shopping-cart col-md-10 col-lg-10">
+							<input class="input-coupon small-text" name="your-coupon" type="text" id="your-coupon" placeholder="Enter your coupon here">
+						</div>
+						<div class="wrap-btn-coupon col-responsive-shopping-cart col-md-10 col-lg-2">
+							<button class="btn-coupon btn-with-bg" type="submit" >Apply Coupon</button>
+						</div>
+					</div>
+				</div>
+                </form>
+                </section>
+                
+				<div class="wrap-estimate-shipping-extend wrap-coupon">
+					<div class="row">
+						<div class="wrap-title-coupon col-responsive-shopping-cart col-md-10 col-lg-10">
+							<h4 class="title-coupon" name="shipping" type="text" id="shipping">Estimate Shipping</h4>
+						</div>
+
+						<div class="wrap-chose-address-extend wrap-input-coupon col-responsive-shopping-cart col-md-10 col-lg-10">
+							<div class="row">
+								<div class="col-responsive-chose-address left col-md-12 col-lg-6">
+									<select class="chose-people" name="chose-city">
+										<option>Ball Park 31st Street</option>
+										<option>Norway Plane 15th main</option>
+										<option>Hollywood 7th main</option>
+										<option>West Street 31st main</option>
+										<option>Woodlane 1st street</option>
+										<option>Mirage West 12th main</option>
+									</select>
+								</div>
+
+								<div class="col-responsive-chose-address right  col-md-12 col-lg-6">
+									<select class="chose-time" name="chose-state">
+										<option>New York</option>
+										<option>New Jersey</option>
+										<option>California</option>
+										<option>Florida</option>
+										<option>Iowa</option>
+										<option>Texas</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						
+						<div class="wrap-input-coupon col-responsive-shopping-cart col-md-10 col-lg-10">
+							<input  type="text" class="input-coupon small-text" name="your-pin" type="text" id="your-pin" placeholder="Enter your post code here">
+						</div>
+					</div>
+				</div>
+    
+				<div class="wrap-total clearfix">
+						<div class="style-pos col-right">
+							<h6 class="larg-text" name="total" type="text" value=>Total: $  {{user.total}}</h6>
+							<button class="btn-with-bg">Estimate Delivery</button><p></p>
+                            <button class="btn-with-bg"><a href="check-out.mustache">Proceed to checkout</button></a>
+						</div>
+						<div class="style-pos col-left">
+							<a href="shop-page.mustache" class="small-text"><i class="fa fa-angle-left" aria-hidden="true"></i> Continue Shopping</a>
+						</div>
+				</div>
+            </form>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="content-footer row">
+				<div class="column-footer col-lg-5 col-md-8 col-sm-7">
+					<h3>Contact information</h3>
+					<ul>
+						<li>ADDRESS: 100 Tenth Avenue, New York City, NY 1001</li>
+						<li>FOR BOOKING: (044) 359 0173</li>
+						<li id="follow-us">FOLLOW US ON: 
+							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="column-footer col-lg-4 col-md-5 col-sm-7">
+					<h3>Restaurant hours</h3>
+					<ul id="restaurant-hours">
+						<li>
+							<span class="span-left">LUNCH:</span>
+						</li>
+						<li>
+							<span class="span-left">Monday - Friday</span>
+							<span class="span-right">11:30AM - 2:00PM</span>
+						</li>
+						<li>
+							<span class="span-left">DINNER:</span>
+						</li>
+						<li>
+							<span class="span-left">Monday - Friday</span>
+							<span class="span-right">5:30PM - 11:00PM</span>
+						</li>
+						<li>
+							<span class="span-left">Saturday - Sunday</span>
+							<span class="span-right">4:30PM - 10:00PM</span>
+						</li>
+					</ul>
+					<div class="line-divide first-line"></div>
+				</div>
+
+				<div class="column-footer col-lg-3 col-md-3 col-sm-7">
+					<h3>Useful links</h3>
+					<ul id="useful-links">
+						<li>
+							<span class="span-left">
+								<a href="index.mustache">Home</a>
+							</span> 
+							<span class="span-right">
+								<a href="shop-page.mustache">Features</a>
+							</span>
+						</li>
+						<li>
+							<span class="span-left">
+								<a href="menu-01.mustache">Menus</a>
+							</span> 
+							<span class="span-right">
+								<a href="blog-list-with-sidebar-01.mustache">Blog</a>
+							</span>
+						</li>
+						<li>
+							<span class="span-left">
+								<a href="reservation-01.mustache">Reservation</a>
+							</span> 
+							<span class="span-right">
+								<a href="contact-us.mustache">Contact us</a>
+							</span>
+						</li>
+						<li><a href="about-us.mustache">About us</a></li>
+					</ul>
+					<div class="line-divide second-line"></div>
+				</div>
+			</div>
+		</div>
+		<div class="wrap-bottom-footer">
+			<div class="container">
+				<div class="bottom-footer row justify-content-between">
+					<div class="col-12 col-sm-7">© 2017 DesignGalaxy8. All rights reserved.</div>
+					<div class="col-12 col-sm-5"><span>Privacy policy</span><span>Terms of use</span></div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- Back to top -->
+	<div class="btn-back-to-top" id="myBtn">
+		<span class="symbol-btn-back-to-top">
+			<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+		</span>
+	</div>
+
+<!--===============================================================================================-->	
+	<script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/animsition/dist/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/jqueryui/jquery-ui.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/bootstrap/js/popper.min.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->	
+	<script type="text/javascript" src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/daterangepicker-bootstrap/moment.min.js"></script>
+	<script type="text/javascript" src="vendor/daterangepicker-bootstrap/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/bootstrap-notify/bootstrap-notify.js"></script>
+	<script type="text/javascript" src="js/bootstrap-notify-custom.js"></script>
+    
+  
+
+<!--===============================================================================================-->
+	<script src="js/main.js"> </script>
+ </div>
+
+</body>
+</html>

@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--Basic Page Needs-->
+	<title>Menu 01</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="AuCreative theme tempalte">
+	<meta name="author" content="AuCreative">
+	<meta name="keywords" content="AuCreative theme template">
+	<!--Mobile Specific Metas-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" type="image/png" href="images/icons/dish.png"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker-bootstrap/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/dist/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+<!--===============================================================================================-->
+</head>
+<body class="animsition">
+	
+	<header>
+		<!-- Header desktop -->
+		<div id="wrap_header" >
+			<!-- Logo -->		
+			<div class="logo col_header">
+				<a href="index.mustache"><img alt="logo-deli" src="images/icons/dish.png"></a>
+			</div>
+			<!-- Menu -->
+			<div class="main_nav">
+				<nav class="menu col_header">
+					<ul class="main_menu">
+						<li><a href="index.mustache">Home</a>
+							<ul class="sub_menu">
+								<li><a href="index.mustache">Homepage</a></li>
+							</ul>
+						</li>
+						<li><a href="menu-01.mustache">Menus</a>
+							<ul class="sub_menu">
+								<li><a href="menu-01.mustache">Menu 01</a></li>
+								<li><a href="menu-02.mustache">Menu 02</a></li>
+								<li><a href="menu-03.mustache">Menu 03</a></li>
+								<li><a href="product-detail.mustache">Product Detail</a></li>
+							</ul>
+						</li>
+						<li><a href="reservation-01.mustache" class="have_sub_menu">Reservation</a>
+							<ul class="sub_menu">
+								<li><a href="reservation-02.mustache">Reservation V2</a></li>
+							</ul>
+						</li>
+						<li><a href="about-us.mustache">About us</a></li>
+						<li><a href="shop-page.mustache">Features</a>
+							<ul class="sub_menu">
+								<li><a href="shop-page.mustache">Shop Page</a></li>
+								<li><a href="shopping-cart.mustache">Shopping Cart</a></li>
+								<li><a href="check-out.mustache">Check Out</a></li>
+							</ul>
+						</li>
+						<li><a href="blog-list-with-sidebar-01.mustache">Blog</a>
+							<ul class="sub_menu">
+								<li><a href="blog-list-with-sidebar-01.mustache">Blog With Sidebar V1</a></li>
+								<li><a href="blog-list-with-sidebar-02.mustache">Blog With Sidebar V2</a></li>
+								<li><a href="blog-mansory.mustache">Blog Mansory</a></li>
+								<li><a href="blog-detail.mustache">Blog Detail</a></li>
+							</ul>
+						</li>
+						<li><a href="contact-us.mustache">Contact</a></li>
+                         <li><a href="userlogin" style="align-items: flex-end">Login</a></li>
+                     <li><a href="SignUp" style="align-items: flex-end">SignUp</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<!-- Socials -->
+			<div class="icon-header col_header">
+				<a href="https://www.facebook.com/seasonal.flavors.39?login=sahana.sreenath18@gmail.com&password=Sana@12345"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				<a href="https://twitter.com/SeasonalFlavou1?login=kprarthana04@gmail.com&password=SurveyProject22!"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				<a href="https://www.tripadvisor.com/Profile/Getaway39190902898?login=prarthanagk@gmail.com&password=SurveyProject22!"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+				<a href="https://www.instagram.com/seasonal6679?login=kprarthana04@gmail.com&password=SurveyProject22!"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+			</div>
+		</div>
+
+		<!-- Header Mobile -->
+		<div id="wrap_header_mobile">
+		
+			<!-- Logo moblie -->		
+			<div class="logo-mobile">
+				<a href="index.mustache"><img alt="logo-deli" src="images/icons/logo-mobile.png"></a>
+			</div>
+
+			<!-- Button show menu -->
+			<div class="btn-show-menu">
+				<button class="btn-show-menu-mobile hamburger hamburger--squeeze" type="button">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</button>
+			</div>	
+		</div>
+
+		<!-- Menu Mobile -->
+		<div class="wrap-side-menu" >
+			<nav class="side-menu">
+				<ul class="main-menu">
+					<li>
+						<a href="index.mustache">Home</a>
+						<i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
+						<ul class="sub-menu">
+							<li><a href="index.mustache">Homepage</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="menu-01.mustache">Menus</a>
+						<i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
+						<ul class="sub-menu">
+							<li><a href="menu-01.mustache">Menu 01</a></li>
+							<li><a href="menu-02.mustache">Menu 02</a></li>
+							<li><a href="menu-03.mustache">Menu 03</a></li>
+							<li><a href="product-detail.mustache">Product Detail</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="reservation-01.mustache">Reservation</a>
+						<i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
+						<ul class="sub-menu">
+							<li><a href="reservation-02.mustache">Reservation V2</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="about-us.mustache">About us</a>
+					</li>
+					<li>
+						<a href="shop-page.mustache">Features</a>
+						<i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
+						<ul class="sub-menu">
+							<li><a href="shop-page.mustache">Shop Page</a></li>
+							<li><a href="shopping-cart.mustache">Shopping Cart</a></li>
+							<li><a href="check-out.mustache">Check Out</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="blog-list-with-sidebar-01.mustache">Blog</a>
+						<i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
+						<ul class="sub-menu">
+							<li><a href="blog-list-with-sidebar-01.mustache">Blog With Sidebar V1</a></li>
+							<li><a href="blog-list-with-sidebar-02.mustache">Blog With Sidebar V2</a></li>
+							<li><a href="blog-mansory.mustache">Blog Mansory</a></li>
+							<li><a href="blog-detail.mustache">Blog Detail</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="contact-us.mustache">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!-- Title Menu page -->
+	<section>
+		<div class="bg-title-sub-page bg-menu-page-01">
+			<div class="wrap-title-sub-page">
+				<h2 class="title-l">Our Menu</h2>
+				<h6 class="title-s">Home / Our Menu</h6>
+			</div>
+		</div>
+	</section>
+
+	<!-- Our Menu 1 -->
+	<section class="our-menu for-menu-page" >
+		<div class="container">
+			<!-- title our menu -->
+			<div class="wrap-title-our-menu row">
+				<div class="col-12 title-our-menu">
+					<h6>try &amp; discover</h6>
+					<h2>Our Appetizer</h2>
+				</div>
+			</div>
+
+			<!-- list food -->
+			<div class="wrap-list-food">
+				<div class="row list-food">
+					<div class="col-md-10 col-lg-6">
+						<!-- item food -->
+						<div class="item-food row wow fadeInDown" data-wow-delay="0.2s">
+							<div class="col-12 col-sm-2 img-list-food wow zoomIn " data-wow-delay="0.2s">
+								<a href="product-detail.mustache"><img alt="food" src="images/img-our-menu-01.png"></a>
+							</div>
+							<div class="col-12 col-sm-8 text-list-food ">
+								<div class="name-price row">
+									<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.mustache">Pine nut sbrisalona</a></div>
+									<div class="line-food col">
+										<div class="add-line-run"></div>
+									</div>
+								</div>
+								<div class="row"> 
+									<div class="col-12 col-sm-12 info-food">
+										Pine nut sautèd and paste fried with sbrisalona
+									</div>
+								</div>
+							</div>
+							<div class="price-food col-12 col-sm-2">&#36;20.00</div>
+						</div>
+					</div>
+					<div class="col-md-10 col-lg-6">
+						<!-- item food -->
+						<div class="item-food row wow fadeInDown" data-wow-delay="0.2s">
+							<div class="col-12 col-sm-2 img-list-food wow zoomIn " data-wow-delay="0.2s">
+								<a href="product-detail.mustache"><img alt="food" src="images/img-our-menu-05.png"></a>
+							</div>
+							<div class="col-12 col-sm-8 text-list-food ">
+								<div class="name-price row">
+									<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.mustache">Potato gnocchi</a></div>
+									<div class="line-food col">
+										<div class="add-line-run"></div>
+									</div>
+								</div>
+								<div class="row"> 
+									<div class="col-12 col-sm-12 info-food">
+										Poached potato mashed and fried with butter and garlic sauce garnished with herbs
+									</div>
+								</div>
+							</div>
+							<div class="price-food col-12 col-sm-2">&#36;10.00</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row list-food">
+					<div class="col-md-10 col-lg-6">
+						<!-- item food -->
+						<div class="item-food row wow fadeInDown" data-wow-delay="0.4s">
+							<div class="col-12 col-sm-2 img-list-food wow zoomIn " data-wow-delay="0.4s">
+								<a href="product-detail.mustache"><img alt="food" src="images/img-our-menu-02.png"></a>
+							</div>
+							<div class="col-12 col-sm-8 text-list-food ">
+								<div class="name-price row">
+									<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.mustache">Lobster caponata</a></div>
+									<div class="line-food col">
+										<div class="add-line-run"></div>
+									</div>
+								</div>
+								<div class="row"> 
+									<div class="col-12 col-sm-12 info-food">
+										Lobster cooked and poached, stir fried with butter and garlic sauce
+									</div>
+								</div>
+							</div>
+							<div class="price-food col-12 col-sm-2">&#36;10.00</div>
+						</div>	
+					</div>
+					<div class="col-md-10 col-lg-6">
+						<!-- item food -->
+						<div class="item-food row wow fadeInDown" data-wow-delay="0.4s">
+							<div class="col-12 col-sm-2 img-list-food wow zoomIn " data-wow-delay="0.4s">
+								<a href="product-detail.mustache"><img alt="food" src="images/img-our-menu-06.png"></a>
+							</div>
+							<div class="col-12 col-sm-8 text-list-food ">
+								<div class="name-price row">
+									<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.mustache">Pork ribollita</a></div>
+									<div class="line-food col">
+										<div class="add-line-run"></div>
+									</div>
+								</div>
+								<div class="row"> 
+									<div class="col-12 col-sm-12 info-food">
+									Slow roasted pork loin finished with a portabella demi-glace. Served with marrow-scented couscous and wilted kale 
+									</div>
+								</div>
+							</div>
+							<div class="price-food col-12 col-sm-2">&#36;15.00</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row list-food">
+					<div class="col-md-10 col-lg-6">
+						<!-- item food -->
+						<div class="item-food row wow fadeInDown" data-wow-delay="0.6s">
+							<div class="col-12 col-sm-2 img-list-food wow zoomIn " data-wow-delay="0.6s">
+								<a href="product-detail.mustache"><img alt="food" src="images/img-our-menu-03.png"></a>
+							</div>
+							<div class="col-12 col-sm-8 text-list-food ">
+								<div class="name-price row">
+									<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.mustache">Chocolate budino</a></div>
+									<div class="line-food col">
+										<div class="add-line-run"></div>
+									</div>
+								</div>
+								<div class="row"> 
+									<div class="col-12 col-sm-12 info-food">
+										Chocolate and vanilla whipped cream with caramel syrup
+									</div>
+								</div>
+							</div>
+							<div class="price-food col-12 col-sm-2">&#36;15.00</div>
+						</div>	
+					</div>
+					<div class="col-md-10 col-lg-6">
+						<!-- item food -->
+						<div class="item-food row wow fadeInDown" data-wow-delay="0.6s">
+							<div class="col-12 col-sm-2 img-list-food wow zoomIn " data-wow-delay="0.6s">
+								<a href="product-detail.mustache"><img alt="food" src="images/img-our-menu-07.png"></a>
+							</div>
+							<div class="col-12 col-sm-8 text-list-food ">
+								<div class="name-price row">
+									<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.mustache">Livorno style caccuchino</a></div>
+									<div class="line-food col">
+										<div class="add-line-run"></div>
+									</div>
+								</div>
+								<div class="row"> 
+									<div class="col-12 col-sm-12 info-food">
+									Boneless chicken breast sautéed with mushrooms and finished in a marsala and cream reduction
+									</div>
+								</div>
+							</div>
+							<div class="price-food col-12 col-sm-2">&#36;30.00</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row list-food">
+					<div class="col-md-10 col-lg-6">
+						<!-- item food -->
+						<div class="item-food row wow fadeInDown" data-wow-delay="0.8s">
+							<div class="col-12 col-sm-2 img-list-food wow zoomIn " data-wow-delay="0.8s">
+								<a href="product-detail.mustache"><img alt="food" src="images/img-our-menu-04.png"></a>
+							</div>
+							<div class="col-12 col-sm-8 text-list-food ">
+								<div class="name-price row">
+									<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.mustache">Charred octopus</a></div>
+									<div class="line-food col">
+										<div class="add-line-run"></div>
+									</div>
+								</div>
+								<div class="row"> 
+									<div class="col-12 col-sm-12 info-food">
+										Baby octopus grilled with butter and various spices
+									</div>
+								</div>
+							</div>
+							<div class="price-food col-12 col-sm-2">&#36;5.00</div>
+						</div>
+					</div>
+					<div class="col-md-10 col-lg-6">
+						<!-- item food -->
+						<div class="item-food row wow fadeInDown" data-wow-delay="0.8s">
+							<div class="col-12 col-sm-2 img-list-food wow zoomIn " data-wow-delay="0.8s">
+								<a href="product-detail.mustache"><img alt="food" src="images/img-our-menu-08.png"></a>
+							</div>
+							<div class="col-12 col-sm-8 text-list-food ">
+								<div class="name-price row">
+									<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.mustache">Baulletti</a></div>
+									<div class="line-food col">
+										<div class="add-line-run"></div>
+									</div>
+								</div>
+								<div class="row"> 
+									<div class="col-12 col-sm-12 info-food">
+									Boneless chicken breast sautéed with mushrooms and fresh garlic. Finished with white wine, sweet cream butter, and linguini
+									</div>
+								</div>
+							</div>
+							<div class="price-food col-12 col-sm-2">&#36;5.00</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Banner -->
+	<div class="parallax-banner-3 ">
+		<div class="content-banner-for-menu-page">
+		</div>
+	</div> 
+	
+	<!-- Our Menu 2 -->
+	<section class="our-menu for-menu-page" >
+		<div class="container">
+			<!-- title our menu -->
+			<div class="wrap-title-our-menu row">
+				<div class="col-12 title-our-menu">
+					<h6>try &amp; discover</h6>
+					<h2>Our Main Meal</h2>
+				</div>
+			</div>
+
+			<!-- list food -->
+			<div class="wrap-list-food">
+				<div class="row list-food">
+					<div class="col-md-10 col-lg-6">
+						<!-- item food -->
+						<div class="item-food row wow fadeInDown" data-wow-delay="0.2s">
+							<div class="col-12 col-sm-2 img-list-food wow zoomIn " data-wow-delay="0.2s">
+								<a href="product-detail.mustache"><img alt="food" src="images/img-our-menu-03.png"></a>
+							</div>
+							<div class="col-12 col-sm-8 text-list-food ">
+								<div class="name-price row">
+									<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.mustache">Chocolate budino</a></div>
+									<div class="line-food col">
+										<div class="add-line-run"></div>
+									</div>
+								</div>
+								<div class="row"> 
+									<div class="col-12 col-sm-12 info-food">
+										Chocolate and vanilla mouse topped with caramel dressing
+									</div>
+								</div>
+							</div>
+							<div class="price-food col-12 col-sm-2">&#36;15.00</div>
+						</div>
+					</div>
+					<div class="col-md-10 col-lg-6">
+						<!-- item food -->
+						<div class="item-food row wow fadeInDown" data-wow-delay="0.2s">
+							<div class="col-12 col-sm-2 img-list-food wow zoomIn " data-wow-delay="0.2s">
+								<a href="product-detail.mustache"><img alt="food" src="images/img-our-menu-07.png"></a>
+							</div>
+							<div class="col-12 col-sm-8 text-list-food ">
+								<div class="name-price row">
+									<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.mustache">Livorno style caccuchino</a></div>
+									<div class="line-food col">
+										<div class="add-line-run"></div>
+									</div>
+								</div>
+								<div class="row"> 
+									<div class="col-12 col-sm-12 info-food">
+										Boneless chicken breast sautéed with mushrooms and fresh garlic. Finished with white wine, sweet cream butter, and linguini
+									</div>
+								</div>
+							</div>
+							<div class="price-food col-12 col-sm-2">&#36;30.00</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row list-food">
+					<div class="col-md-10 col-lg-6">
+						<!-- item food -->
+						<div class="item-food row wow fadeInDown" data-wow-delay="0.4s">
+							<div class="col-12 col-sm-2 img-list-food wow zoomIn " data-wow-delay="0.4s">
+								<a href="product-detail.mustache"><img alt="food" src="images/img-our-menu-04.png"></a>
+							</div>
+							<div class="col-12 col-sm-8 text-list-food ">
+								<div class="name-price row">
+									<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.mustache">Charred octopus</a></div>
+									<div class="line-food col">
+										<div class="add-line-run"></div>
+									</div>
+								</div>
+								<div class="row"> 
+									<div class="col-12 col-sm-12 info-food">
+									Baby octopus fried with herbs and butter, finished with white wine.
+									</div>
+								</div>
+							</div>
+							<div class="price-food col-12 col-sm-2">&#36;5.00</div>
+						</div>
+					</div>
+					<div class="col-md-10 col-lg-6">
+						<!-- item food -->
+						<div class="item-food row wow fadeInDown" data-wow-delay="0.4s">
+							<div class="col-12 col-sm-2 img-list-food wow zoomIn " data-wow-delay="0.4s">
+								<a href="product-detail.mustache"><img alt="food" src="images/img-our-menu-08.png"></a>
+							</div>
+							<div class="col-12 col-sm-8 text-list-food ">
+								<div class="name-price row">
+									<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.mustache">Baulletti</a></div>
+									<div class="line-food col">
+										<div class="add-line-run"></div>
+									</div>
+								</div>
+								<div class="row"> 
+									<div class="col-12 col-sm-12 info-food">
+									chicken tenderly cooked with butter and herbs sauted with assorted spices
+									</div>
+								</div>
+							</div>
+							<div class="price-food col-12 col-sm-2">&#36;5.00</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row list-food">
+					<div class="col-md-10 col-lg-6">
+						<!-- item food -->
+						<div class="item-food row wow fadeInDown" data-wow-delay="0.6s">
+							<div class="col-12 col-sm-2 img-list-food wow zoomIn " data-wow-delay="0.6s">
+								<a href="product-detail.mustache"><img alt="food" src="images/img-our-menu-01.png"></a>
+							</div>
+							<div class="col-12 col-sm-8 text-list-food ">
+								<div class="name-price row">
+									<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.mustache">Pine nut sbrisalona</a></div>
+									<div class="line-food col">
+										<div class="add-line-run"></div>
+									</div>
+								</div>
+								<div class="row"> 
+									<div class="col-12 col-sm-12 info-food">
+										Pine nut paste roasted and grinded mixed and fried with sbrisalona
+									</div>
+								</div>
+							</div>
+							<div class="price-food col-12 col-sm-2">&#36;20.00</div>
+						</div>
+					</div>
+					<div class="col-md-10 col-lg-6">
+						<!-- item food -->
+						<div class="item-food row wow fadeInDown" data-wow-delay="0.6s">
+							<div class="col-12 col-sm-2 img-list-food wow zoomIn " data-wow-delay="0.6s">
+								<a href="product-detail.mustache"><img alt="food" src="images/img-our-menu-05.png"></a>
+							</div>
+							<div class="col-12 col-sm-8 text-list-food ">
+								<div class="name-price row">
+									<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.mustache">Potato gnocchi</a></div>
+									<div class="line-food col">
+										<div class="add-line-run"></div>
+									</div>
+								</div>
+								<div class="row"> 
+									<div class="col-12 col-sm-12 info-food">
+										Poached potato fried with butter and garlic sauce and garnished with herbs
+									</div>
+								</div>
+							</div>
+							<div class="price-food col-12 col-sm-2">&#36;10.00</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row list-food">
+					<div class="col-md-10 col-lg-6">
+						<!-- item food -->
+						<div class="item-food row wow fadeInDown" data-wow-delay="0.8s">
+							<div class="col-12 col-sm-2 img-list-food wow zoomIn " data-wow-delay="0.8s">
+								<a href="product-detail.mustache"><img alt="food" src="images/img-our-menu-02.png"></a>
+							</div>
+							<div class="col-12 col-sm-8 text-list-food ">
+								<div class="name-price row">
+									<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.mustache">Lobster caponata</a></div>
+									<div class="line-food col">
+										<div class="add-line-run"></div>
+									</div>
+								</div>
+								<div class="row"> 
+									<div class="col-12 col-sm-12 info-food">
+										Red lobster poached and fried with butter and garlic sauce and added spices
+									</div>
+								</div>
+							</div>
+							<div class="price-food col-12 col-sm-2">&#36;10.00</div>
+						</div>
+					</div>
+					<div class="col-md-10 col-lg-6">
+						<!-- item food -->
+						<div class="item-food row wow fadeInDown" data-wow-delay="0.8s">
+							<div class="col-12 col-sm-2 img-list-food wow zoomIn " data-wow-delay="0.8s">
+								<a href="product-detail.mustache"><img alt="food" src="images/img-our-menu-06.png"></a>
+							</div>
+							<div class="col-12 col-sm-8 text-list-food ">
+								<div class="name-price row">
+									<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.mustache">Pork ribollita</a></div>
+									<div class="line-food col">
+										<div class="add-line-run"></div>
+									</div>
+								</div>
+								<div class="row"> 
+									<div class="col-12 col-sm-12 info-food">
+										Slow roasted pork loin finished with a portabella demi-glace. Served with marrow-scented couscous and wilted kale
+									</div>
+								</div>
+							</div>
+							<div class="price-food col-12 col-sm-2">&#36;15.00</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Banner 2 -->
+	<div class="parallax-banner-4 ">
+		<div class="content-banner-for-menu-page">
+			
+		</div>
+	</div>
+
+	<!-- Our Menu 3 -->
+	<section class="our-menu for-menu-page" >
+		<div class="container">
+			<!-- title our menu -->
+			<div class="wrap-title-our-menu row">
+				<div class="col-12 title-our-menu">
+					<h6>try &amp; discover</h6>
+					<h2>Our Dessert</h2>
+				</div>
+			</div>
+
+			<!-- list food -->
+			<div class="wrap-list-food">
+				<div class="row list-food">
+					<div class="col-md-10 col-lg-6">
+						<!-- item food -->
+						<div class="item-food row wow fadeInDown" data-wow-delay="0.2s">
+							<div class="col-12 col-sm-2 img-list-food wow zoomIn " data-wow-delay="0.2s">
+								<a href="product-detail.mustache"><img alt="food" src="images/img-our-menu-02.png"></a>
+							</div>
+							<div class="col-12 col-sm-8 text-list-food ">
+								<div class="name-price row">
+									<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.mustache">Lobster caponata</a></div>
+									<div class="line-food col">
+										<div class="add-line-run"></div>
+									</div>
+								</div>
+								<div class="row"> 
+									<div class="col-12 col-sm-12 info-food">
+										Red lobster poached and cooked perfectly and stir fried with butter and garlic sauce
+									</div>
+								</div>
+							</div>
+							<div class="price-food col-12 col-sm-2">&#36;10.00</div>
+						</div>
+					</div>
+					<div class="col-md-10 col-lg-6">
+						<!-- item food -->
+						<div class="item-food row wow fadeInDown" data-wow-delay="0.2s">
+							<div class="col-12 col-sm-2 img-list-food wow zoomIn " data-wow-delay="0.2s">
+								<a href="product-detail.mustache"><img alt="food" src="images/img-our-menu-06.png"></a>
+							</div>
+							<div class="col-12 col-sm-8 text-list-food ">
+								<div class="name-price row">
+									<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.mustache">Pork ribollita</a></div>
+									<div class="line-food col">
+										<div class="add-line-run"></div>
+									</div>
+								</div>
+								<div class="row"> 
+									<div class="col-12 col-sm-12 info-food">
+										Slow roasted pork loin finished with a portabella demi-glace. Served with marrow-scented couscous and wilted kale 
+									</div>
+								</div>
+							</div>
+							<div class="price-food col-12 col-sm-2">&#36;15.00</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row list-food">
+					<div class="col-md-10 col-lg-6">
+						<!-- item food -->
+						<div class="item-food row wow fadeInDown" data-wow-delay="0.4s">
+							<div class="col-12 col-sm-2 img-list-food wow zoomIn " data-wow-delay="0.4s">
+								<a href="product-detail.mustache"><img alt="food" src="images/img-our-menu-03.png"></a>
+							</div>
+							<div class="col-12 col-sm-8 text-list-food ">
+								<div class="name-price row">
+									<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.mustache">Chocolate budino</a></div>
+									<div class="line-food col">
+										<div class="add-line-run"></div>
+									</div>
+								</div>
+								<div class="row"> 
+									<div class="col-12 col-sm-12 info-food">
+										Chocolate and vanilla whipped cream topped with caramel dressing
+									</div>
+								</div>
+							</div>
+							<div class="price-food col-12 col-sm-2">&#36;15.00</div>
+						</div>
+					</div>
+					<div class="col-md-10 col-lg-6">
+						<!-- item food -->
+						<div class="item-food row wow fadeInDown" data-wow-delay="0.4s">
+							<div class="col-12 col-sm-2 img-list-food wow zoomIn " data-wow-delay="0.4s">
+								<a href="product-detail.mustache"><img alt="food" src="images/img-our-menu-07.png"></a>
+							</div>
+							<div class="col-12 col-sm-8 text-list-food ">
+								<div class="name-price row">
+									<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.mustache">Livorno style caccuchino</a></div>
+									<div class="line-food col">
+										<div class="add-line-run"></div>
+									</div>
+								</div>
+								<div class="row"> 
+									<div class="col-12 col-sm-12 info-food">
+										Boneless chicken breast sautéed with mushrooms, spinach, artichoke hearts, fire-roasted red peppers
+									</div>
+								</div>
+							</div>
+							<div class="price-food col-12 col-sm-2">&#36;30.00</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row list-food">
+					<div class="col-md-10 col-lg-6">
+						<!-- item food -->
+						<div class="item-food row wow fadeInDown" data-wow-delay="0.6s">
+							<div class="col-12 col-sm-2 img-list-food wow zoomIn " data-wow-delay="0.6s">
+								<a href="product-detail.mustache"><img alt="food" src="images/img-our-menu-01.png"></a>
+							</div>
+							<div class="col-12 col-sm-8 text-list-food ">
+								<div class="name-price row">
+									<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.mustache">Pine nut sbrisalona</a></div>
+									<div class="line-food col">
+										<div class="add-line-run"></div>
+									</div>
+								</div>
+								<div class="row"> 
+									<div class="col-12 col-sm-12 info-food">
+										Pine nut paste roasted and stir fried with sbrisalona 
+									</div>
+								</div>
+							</div>
+							<div class="price-food col-12 col-sm-2">&#36;20.00</div>
+						</div>
+					</div>
+					<div class="col-md-10 col-lg-6">
+						<!-- item food -->
+						<div class="item-food row wow fadeInDown" data-wow-delay="0.6s">
+							<div class="col-12 col-sm-2 img-list-food wow zoomIn " data-wow-delay="0.6s">
+								<a href="product-detail.mustache"><img alt="food" src="images/img-our-menu-05.png"></a>
+							</div>
+							<div class="col-12 col-sm-8 text-list-food ">
+								<div class="name-price row">
+									<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.mustache">Potato gnocchi</a></div>
+									<div class="line-food col">
+										<div class="add-line-run"></div>
+									</div>
+								</div>
+								<div class="row"> 
+									<div class="col-12 col-sm-12 info-food">
+										Poached potato stir fried with butter and garlic 
+									</div>
+								</div>
+							</div>
+							<div class="price-food col-12 col-sm-2">&#36;10.00</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row list-food">
+					<div class="col-md-10 col-lg-6">
+						<!-- item food -->
+						<div class="item-food row wow fadeInDown" data-wow-delay="0.8s">
+							<div class="col-12 col-sm-2 img-list-food wow zoomIn " data-wow-delay="0.8s">
+								<a href="product-detail.mustache"><img alt="food" src="images/img-our-menu-04.png"></a>
+							</div>
+							<div class="col-12 col-sm-8 text-list-food ">
+								<div class="name-price row">
+									<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.mustache">Charred octopus</a></div>
+									<div class="line-food col">
+										<div class="add-line-run"></div>
+									</div>
+								</div>
+								<div class="row"> 
+									<div class="col-12 col-sm-12 info-food">
+										Baby octopus tenderly cooked with white wine and herbs finished with chef sauce
+									</div>
+								</div>
+							</div>
+							<div class="price-food col-12 col-sm-2">&#36;5.00</div>
+						</div>
+					</div>
+					<div class="col-md-10 col-lg-6">
+						<!-- item food -->
+						<div class="item-food row wow fadeInDown" data-wow-delay="0.8s">
+							<div class="col-12 col-sm-2 img-list-food wow zoomIn " data-wow-delay="0.8s">
+								<a href="product-detail.mustache"><img alt="food" src="images/img-our-menu-08.png"></a>
+							</div>
+							<div class="col-12 col-sm-8 text-list-food ">
+								<div class="name-price row">
+									<div class="name-food col-12 col-sm-auto"><a class="hover-link-color" href="product-detail.mustache">Sampi Roja</a></div>
+									<div class="line-food col">
+										<div class="add-line-run"></div>
+									</div>
+								</div>
+								<div class="row"> 
+									<div class="col-12 col-sm-12 info-food">
+										Boneless chicken breast sautéed in a scampi sauce with sun-dried tomatoes, artichoke hearts, and spinach
+									</div>
+								</div>
+							</div>
+							<div class="price-food col-12 col-sm-2">&#36;5.00</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="content-footer row">
+				<div class="column-footer col-lg-5 col-md-8 col-sm-7">
+					<h3>Contact information</h3>
+					<ul>
+						<li>ADDRESS: 100 Tenth Avenue, New York City, NY 1001</li>
+						<li>FOR BOOKING: (044) 359 0173</li>
+						<li id="follow-us">FOLLOW US ON: 
+							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="column-footer col-lg-4 col-md-5 col-sm-7">
+					<h3>Restaurant hours</h3>
+					<ul id="restaurant-hours">
+						<li>
+							<span class="span-left">LUNCH:</span>
+						</li>
+						<li>
+							<span class="span-left">Monday - Friday</span>
+							<span class="span-right">11:30AM - 2:00PM</span>
+						</li>
+						<li>
+							<span class="span-left">DINNER:</span>
+						</li>
+						<li>
+							<span class="span-left">Monday - Friday</span>
+							<span class="span-right">5:30PM - 11:00PM</span>
+						</li>
+						<li>
+							<span class="span-left">Saturday - Sunday</span>
+							<span class="span-right">4:30PM - 10:00PM</span>
+						</li>
+					</ul>
+					<div class="line-divide first-line"></div>
+				</div>
+
+				<div class="column-footer col-lg-3 col-md-3 col-sm-7">
+					<h3>Useful links</h3>
+					<ul id="useful-links">
+						<li>
+							<span class="span-left">
+								<a href="index.mustache">Home</a>
+							</span> 
+							<span class="span-right">
+								<a href="shop-page.mustache">Features</a>
+							</span>
+						</li>
+						<li>
+							<span class="span-left">
+								<a href="menu-01.mustache">Menus</a>
+							</span> 
+							<span class="span-right">
+								<a href="blog-list-with-sidebar-01.mustache">Blog</a>
+							</span>
+						</li>
+						<li>
+							<span class="span-left">
+								<a href="reservation-01.mustache">Reservation</a>
+							</span> 
+							<span class="span-right">
+								<a href="contact-us.mustache">Contact us</a>
+							</span>
+						</li>
+						<li><a href="about-us.mustache">About us</a></li>
+					</ul>
+					<div class="line-divide second-line"></div>
+				</div>
+			</div>
+		</div>
+		<div class="wrap-bottom-footer">
+			<div class="container">
+				<div class="bottom-footer row justify-content-between">
+					<div class="col-12 col-sm-7">© 2017 DesignGalaxy8. All rights reserved.</div>
+					<div class="col-12 col-sm-5"><span>Privacy policy</span><span>Terms of use</span></div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- Back to top -->
+	<div class="btn-back-to-top" id="myBtn">
+		<span class="symbol-btn-back-to-top">
+			<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+		</span>
+	</div>
+
+
+<!--===============================================================================================-->	
+	<script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/wow/wow.min.js"></script>
+
+	<script type="text/javascript">
+		new WOW().init();
+	</script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/animsition/dist/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/bootstrap/js/popper.min.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->	
+	<script type="text/javascript" src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/daterangepicker-bootstrap/moment.min.js"></script>
+	<script type="text/javascript" src="vendor/daterangepicker-bootstrap/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+</body>
+</mustache>

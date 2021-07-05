@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--Basic Page Needs-->
+	<title>Blog Mansory</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="AuCreative theme tempalte">
+	<meta name="author" content="AuCreative">
+	<meta name="keywords" content="AuCreative theme template">
+	<!--Mobile Specific Metas-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" type="image/png" href="images/icons/dish.png"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker-bootstrap/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/jqueryui/jquery-ui.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/dist/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+<div class="animsition">	
+	<header>
+		<!-- Header desktop -->
+		<div id="wrap_header" >
+			<!-- Logo -->		
+			<div class="logo col_header">
+				<a href="index.mustache"><img alt="logo-deli" src="images/icons/dish.png"></a>
+			</div>
+			<!-- Menu -->
+			<div class="main_nav">
+				<nav class="menu col_header">
+					<ul class="main_menu">
+						<li><a href="index.mustache">Home</a>
+							<ul class="sub_menu">
+								<li><a href="index.mustache">Homepage</a></li>
+							</ul>
+						</li>
+						<li><a href="menu-01.mustache">Menus</a>
+							<ul class="sub_menu">
+								<li><a href="menu-01.mustache">Menu 01</a></li>
+								<li><a href="menu-02.mustache">Menu 02</a></li>
+								<li><a href="menu-03.mustache">Menu 03</a></li>
+								<li><a href="product-detail.mustache">Product Detail</a></li>
+							</ul>
+						</li>
+						<li><a href="reservation-01.mustache" class="have_sub_menu">Reservation</a>
+							<ul class="sub_menu">
+								<li><a href="reservation-02.mustache">Reservation V2</a></li>
+							</ul>
+						</li>
+						<li><a href="about-us.mustache">About us</a></li>
+						<li><a href="shop-page.mustache">Features</a>
+							<ul class="sub_menu">
+								<li><a href="shop-page.mustache">Shop Page</a></li>
+								<li><a href="shopping-cart.mustache">Shopping Cart</a></li>
+								<li><a href="check-out.mustache">Check Out</a></li>
+							</ul>
+						</li>
+						<li><a href="blog-list-with-sidebar-01.mustache">Blog</a>
+							<ul class="sub_menu">
+								<li><a href="blog-list-with-sidebar-01.mustache">Blog With Sidebar V1</a></li>
+								<li><a href="blog-list-with-sidebar-02.mustache">Blog With Sidebar V2</a></li>
+								<li><a href="blog-mansory.mustache">Blog Mansory</a></li>
+								<li><a href="blog-detail.mustache">Blog Detail</a></li>
+							</ul>
+						</li>
+						<li><a href="contact-us.mustache">Contact</a></li>
+                         <li><a href="userlogin" style="align-items: flex-end">Login</a></li>
+                     <li><a href="SignUp" style="align-items: flex-end">SignUp</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<!-- Socials -->
+			<div class="icon-header col_header">
+				<a href="https://www.facebook.com/seasonal.flavors.39?login=sahana.sreenath18@gmail.com&password=Sana@12345"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				<a href="https://twitter.com/SeasonalFlavou1?login=kprarthana04@gmail.com&password=SurveyProject22!"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				<a href="https://www.tripadvisor.com/Profile/Getaway39190902898?login=prarthanagk@gmail.com&password=SurveyProject22!"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+				<a href="https://www.instagram.com/seasonal6679?login=kprarthana04@gmail.com&password=SurveyProject22!"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+			</div>
+		</div>
+
+		<!-- Header Mobile -->
+		<div id="wrap_header_mobile">
+		
+			<!-- Logo moblie -->		
+			<div class="logo-mobile">
+				<a href="index.mustache"><img alt="logo-deli" src="images/icons/logo-mobile.png"></a>
+			</div>
+
+			<!-- Button show menu -->
+			<div class="btn-show-menu">
+				<button class="btn-show-menu-mobile hamburger hamburger--squeeze" type="button">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</button>
+			</div>	
+		</div>
+
+		<!-- Menu Mobile -->
+		<div class="wrap-side-menu" >
+			<nav class="side-menu">
+				<ul class="main-menu">
+					<li>
+						<a href="index.mustache">Home</a>
+						<i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
+						<ul class="sub-menu">
+							<li><a href="index.mustache">Homepage</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="menu-01.mustache">Menus</a>
+						<i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
+						<ul class="sub-menu">
+							<li><a href="menu-01.mustache">Menu 01</a></li>
+							<li><a href="menu-02.mustache">Menu 02</a></li>
+							<li><a href="menu-03.mustache">Menu 03</a></li>
+							<li><a href="product-detail.mustache">Product Detail</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="reservation-01.mustache">Reservation</a>
+						<i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
+						<ul class="sub-menu">
+							<li><a href="reservation-02.mustache">Reservation V2</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="about-us.mustache">About us</a>
+					</li>
+					<li>
+						<a href="shop-page.mustache">Features</a>
+						<i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
+						<ul class="sub-menu">
+							<li><a href="shop-page.mustache">Shop Page</a></li>
+							<li><a href="shopping-cart.mustache">Shopping Cart</a></li>
+							<li><a href="check-out.mustache">Check Out</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="blog-list-with-sidebar-01.mustache">Blog</a>
+						<i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
+						<ul class="sub-menu">
+							<li><a href="blog-list-with-sidebar-01.mustache">Blog With Sidebar V1</a></li>
+							<li><a href="blog-list-with-sidebar-02.mustache">Blog With Sidebar V2</a></li>
+							<li><a href="blog-mansory.mustache">Blog Mansory</a></li>
+							<li><a href="blog-detail.mustache">Blog Detail</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="contact-us.mustache">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!-- Title Shop page -->
+	<section>
+		<div class="bg-title-sub-page bg-menu-page-02 ">
+			<div class="wrap-title-sub-page">
+				<h2 class="title-l">Blog Page</h2>
+				<h6 class="title-s">Home / Blog Page</h6>
+			</div>
+		</div>
+	</section>
+
+	<section class="content-blog-mansory extend content-shop-page">
+		<div class="container">
+			<div class="wrap-content-blog row">
+				<!-- -->
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					<div class="main-post ">
+						<div class="hover-img">
+							<a href="blog-detail.mustache"><img src="images/blog-mansory-img-01.jpg" alt="img-blog"></a>
+						</div>
+
+						<h3 class="medium-text-2"><a href="cookie.mustache" class="medium-text-2">Search for Cookies</a></h3>
+						<p class="para-sub-post">
+						Search for a great variety of cookies, Warm cookies always at the reach of your kitchen. Wonderful recipes with different varieties from chocolate chip to macademia and even gems and candies in cookies for kids. Always good for any occasion or even for a evening on your "me time"!
+						</p>
+						<span class="post-info date-post">Date: July 04, 2017</span>
+						<span class="post-info post-by">Posted by Maria Carroll</span>
+					</div>
+
+					<div class="main-post ">
+						<div class="hover-img">
+							<a href="blog-detail.mustache"><img src="images/blog-mansory-img-02.jpg" alt="img-blog"></a>
+						</div>
+
+						<h3 class="medium-text-2"><a href="butter-tart.mustache" class="medium-text-2">Treat Yourself With Canadian Butter Tart Doughnuts</a></h3>
+						<p class="para-sub-post">
+							We have a great Canadian signature recipe from our well known chef at our restaurant. He will reveal all the secret ingredients to make a perfect and delicious Butter tart, that will melt in your mouth. You can try this recipe and surely gain a lot of appreciation from all your friends and family! Follow the recipe quick and simple with very few ingredients at home.
+						</p>
+						<span class="post-info date-post">Date: July 04, 2017</span>
+						<span class="post-info post-by">Posted by Maria Carroll</span>
+					</div>
+				</div>
+
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					<div class="main-post ">
+						<div class="hover-img">
+							<a href="blog-detail.mustache"><img src="images/blog-mansory-img-03.jpg" alt="img-blog"></a>
+						</div>
+
+						<h3 class="medium-text-2"><a href="birthday-cake.mustache" class="medium-text-2">Look for Birthday Cakes</a></h3>
+						<p class="para-sub-post">
+							Having a Birthday coming up of your loved one? You almost forgot? You dont have any gifts? well we have a perfect cake recipe for you to substitute the lack! Let us guide to a lot of recipes for a nice elegant birthday cake easy to make at home within few hours, ready for Party!!?
+						</p>
+						<span class="post-info date-post">Date: July 04, 2017</span>
+						<span class="post-info post-by">Posted by Maria Carroll</span>
+					</div>
+
+					<div class="main-post ">
+						<div class="hover-img">
+							<a href="blog-detail.mustache"><img src="images/blog-mansory-img-04.jpg" alt="img-blog"></a>
+						</div>
+
+						<h3 class="medium-text-2"><a href="food_blog.mustache" class="medium-text-2">How to Start a Food Blog!?</a></h3>
+						<p class="para-sub-post">
+							Are you wondering how you can start your own blog? Are you passionate about food? Recipes? We have a wonderful guide to help you start and establish great site and attract people to follow you and your recipes posted. Fetches you a lot of publicity and open up lot of opportunities
+						</p>
+						<span class="post-info date-post">Date: July 04, 2017</span>
+						<span class="post-info post-by">Posted by Maria Carroll</span>
+					</div>
+				</div>
+
+				<div class="col-sm-12 col-md-12 col-lg-4">
+					<div class="row">
+						<div class="col-md-6 col-lg-12">
+							<a href="#"><div class="your-ads hover-img main-post">
+								<img src="images/blog-mansory-img-05.jpg" alt="img-ads">
+								<div class="text-your-ads">
+									<h6 class="medium-text-2">Your Ad is put here</h6>
+									<p>Please contact us to advertise your products or ads in our website </p>
+								</div>
+							</div></a>
+						</div>
+
+						<div class="col-md-6 col-lg-12">
+							<div class="main-post ">
+								<div class="hover-img">
+									<a href="blog-detail.mustache"><img src="images/blog-mansory-img-06.jpg" alt="img-blog"></a>
+								</div>
+
+								<h3 class="medium-text-2"><a href="blog-detail.mustache" class="medium-text-2">Deli Useful Tips: 5 Tips to Prevent Freezer Burn</a></h3>
+								<p class="para-sub-post">
+									While freezing foods has some amazing benefits, freezer burn is the potential downside. Freezer burn is a condition in which frozen food has been exposed to air. When food is frozen, water molecules in the food turn into ice crystals. These ice crystals then migrate to the surface of the food, which is why you often see mounds of ice on your frozen foods.
+								</p>
+								<span class="post-info date-post">Date: July 04, 2017</span>
+								<span class="post-info post-by">Posted by Maria Carroll</span>
+							</div>
+						</div>	
+					</div>
+				</div>
+				
+				<!-- -->
+				<div class="bottom-shop-list col-item col-12">
+					<span class="small-text"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+					<span class="small-text">1</span>
+					<span class="small-text">2</span>
+					<span class="small-text">3</span>
+					<span class="small-text"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="content-footer row">
+				<div class="column-footer col-lg-5 col-md-8 col-sm-7">
+					<h3>Contact information</h3>
+					<ul>
+						<li>ADDRESS: 100 Tenth Avenue, New York City, NY 1001</li>
+						<li>FOR BOOKING: (044) 359 0173</li>
+						<li id="follow-us">FOLLOW US ON: 
+							<a href="https://www.facebook.com/seasonal.flavors.39"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="column-footer col-lg-4 col-md-5 col-sm-7">
+					<h3>Restaurant hours</h3>
+					<ul id="restaurant-hours">
+						<li>
+							<span class="span-left">LUNCH:</span>
+						</li>
+						<li>
+							<span class="span-left">Monday - Friday</span>
+							<span class="span-right">11:30AM - 2:00PM</span>
+						</li>
+						<li>
+							<span class="span-left">DINNER:</span>
+						</li>
+						<li>
+							<span class="span-left">Monday - Friday</span>
+							<span class="span-right">5:30PM - 11:00PM</span>
+						</li>
+						<li>
+							<span class="span-left">Saturday - Sunday</span>
+							<span class="span-right">4:30PM - 10:00PM</span>
+						</li>
+					</ul>
+					<div class="line-divide first-line"></div>
+				</div>
+
+				<div class="column-footer col-lg-3 col-md-3 col-sm-7">
+					<h3>Useful links</h3>
+					<ul id="useful-links">
+						<li>
+							<span class="span-left">
+								<a href="index.mustache">Home</a>
+							</span> 
+							<span class="span-right">
+								<a href="shop-page.mustache">Features</a>
+							</span>
+						</li>
+						<li>
+							<span class="span-left">
+								<a href="menu-01.mustache">Menus</a>
+							</span> 
+							<span class="span-right">
+								<a href="blog-list-with-sidebar-01.mustache">Blog</a>
+							</span>
+						</li>
+						<li>
+							<span class="span-left">
+								<a href="reservation-01.mustache">Reservation</a>
+							</span> 
+							<span class="span-right">
+								<a href="contact-us.mustache">Contact us</a>
+							</span>
+						</li>
+						<li><a href="about-us.mustache">About us</a></li>
+					</ul>
+					<div class="line-divide second-line"></div>
+				</div>
+			</div>
+		</div>
+		<div class="wrap-bottom-footer">
+			<div class="container">
+				<div class="bottom-footer row justify-content-between">
+					<div class="col-12 col-sm-7">© 2017 DesignGalaxy8. All rights reserved.</div>
+					<div class="col-12 col-sm-5"><span>Privacy policy</span><span>Terms of use</span></div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- Back to top -->
+	<div class="btn-back-to-top" id="myBtn">
+		<span class="symbol-btn-back-to-top">
+			<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+		</span>
+	</div>
+
+<!--===============================================================================================-->	
+	<script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/animsition/dist/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/jqueryui/jquery-ui.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/bootstrap/js/popper.min.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->	
+	<script type="text/javascript" src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/daterangepicker-bootstrap/moment.min.js"></script>
+	<script type="text/javascript" src="vendor/daterangepicker-bootstrap/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/bootstrap-notify/bootstrap-notify.js"></script>
+	<script type="text/javascript" src="js/bootstrap-notify-custom.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+</div>
+</body>
+</html>
